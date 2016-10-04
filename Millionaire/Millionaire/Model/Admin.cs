@@ -12,6 +12,9 @@ namespace Millionaire.Model
         {
             this.UserID = UserID;
             this.Password = password;
+
+
+
         }
 
         public Question AddQuestion(string questionID, string questionString, string rightAnswer, List<string> wrongAnswers, string category, int level)
