@@ -29,34 +29,49 @@
         private void InitializeComponent()
         {
             this.testButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // testButton
             // 
-            this.testButton.Location = new System.Drawing.Point(235, 259);
+            this.testButton.Location = new System.Drawing.Point(176, 210);
+            this.testButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.testButton.Name = "testButton";
-            this.testButton.Size = new System.Drawing.Size(179, 23);
+            this.testButton.Size = new System.Drawing.Size(134, 19);
             this.testButton.TabIndex = 0;
             this.testButton.Text = "Test Button";
             this.testButton.UseVisualStyleBackColor = true;
             this.testButton.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(274, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
+            // 
             // millionaireForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(657, 375);
+            this.ClientSize = new System.Drawing.Size(493, 305);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.testButton);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "millionaireForm";
             this.Text = "Millionaire";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button testButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 
