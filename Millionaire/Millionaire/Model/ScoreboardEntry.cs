@@ -11,6 +11,7 @@ namespace Millionaire.Model
         private String entryID;
         private Player player;
         private List<Question> questionList;
+        private int time;
 
 
         public string EntryID
@@ -52,6 +53,18 @@ namespace Millionaire.Model
             }
         }
 
+        public int Time
+        {
+            get
+            {
+                return time;
+            }
+
+            set
+            {
+                time = value;
+            }
+        }
 
         public ScoreboardEntry(string entryID, Player player, List<Question> questionList)
         {
