@@ -24,7 +24,7 @@ namespace Millionaire
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            label1.Text = "Gustav Rolf är kung";
         }
     }
 }
